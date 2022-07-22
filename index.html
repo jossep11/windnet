@@ -37,29 +37,76 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-        <div class="container-portada">
-          <div class="Server-Img">
-            <img src="./assets/Server-bro 1.svg" alt="" />
-          </div>
-          <div class="carrusel-info">
-            <h1 class="textCenter">
-              Nuestra potente red de<br />
-              fibra Óptica ya <br />
-              está lista
-            </h1>
-            <br />
-            <h3 class="textCenter">
-              Internet para el hogar y trabajos remotos
-            </h3>
-            <div class="Item-Descubre-Mas ItemsCenter">
-              <button class="btn btn-primary">Descubre más</button>
+
+        <div class="container-slide-all">
+          <input checked type="radio" name="carrucel" id="carrucel-1" hidden />
+          <input type="radio" name="carrucel" id="carrucel-2" hidden />
+          <input type="radio" name="carrucel" id="carrucel-3" hidden />
+
+          <div class="slide">
+            <div class="container-portada">
+              <div class="Server-Img">
+                <img src="./assets/Server-bro 1.svg" alt="" />
+              </div>
+              <div class="item-slide carrusel-info">
+                <h1 class="textCenter">
+                  Nuestra potente red de<br />
+                  fibra Óptica ya <br />
+                  está lista
+                </h1>
+                <br />
+                <h3 class="textCenter">
+                  Internet para el hogar y trabajos remotos
+                </h3>
+                <div class="Item-Descubre-Mas ItemsCenter">
+                  <button class="btn btn-primary">Descubre más</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-portada">
+              <div class="Server-Img">
+                <img src="./assets/Pricing plans-amico 1.svg" alt="" />
+              </div>
+              <div class="item-slide carrusel-info">
+                <h1 class="textCenter">Impulsa tu Comercio!</h1>
+                <br />
+                <h3 class="textCenter">
+                  Con nuestros planes para negocios, <br />
+                  tendrás una estabilidad de conexión <br />
+                  impresionante
+                </h3>
+                <div class="Item-Descubre-Mas ItemsCenter">
+                  <button class="btn btn-primary">Descubre más</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-portada">
+              <div class="Server-Img">
+                <img src="./assets/Telecommuting-amico 1.svg" alt="" />
+              </div>
+              <div class="item-slide carrusel-info">
+                <h1 class="textCenter">
+                  Nuestra potente red de<br />
+                  fibra Óptica ya <br />
+                  está lista
+                </h1>
+                <br />
+                <h3 class="textCenter">
+                  Internet para el hogar y trabajos remotos
+                </h3>
+                <div class="Item-Descubre-Mas ItemsCenter">
+                  <button class="btn btn-primary">Descubre más</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="carrucel ItemsCenter">
-          <button class="btn-carrusel"></button>
-          <button class="btn-carrusel"></button>
-          <button class="btn-carrusel"></button>
+          <div class="carrucel ItemsCenter">
+            <label for="carrucel-1" class="btn-carrusel"> </label>
+            <label for="carrucel-2" class="btn-carrusel"></label>
+            <label for="carrucel-3" class="btn-carrusel"></label>
+          </div>
         </div>
       </header>
 
@@ -67,29 +114,31 @@
         <div class="wave1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
-              fill="#ffffff"
+              fill="#FFF8E5"
               fill-opacity="1"
-              d="M0,224L80,202.7C160,181,320,139,480,154.7C640,171,800,245,960,266.7C1120,288,1280,256,1360,240L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+              d="M0,224L80,234.7C160,245,320,267,480,256C640,245,800,203,960,202.7C1120,203,1280,245,1360,266.7L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
             ></path>
           </svg>
         </div>
 
         <div class="main-container">
           <div class="our-services">
-            <div class="line"></div>
-            <h2 class="services-text yellow-text">Nuestros Servicios</h2>
+            <!-- <div class="line"></div> -->
+            <!-- <h2 class="services-text yellow-text">Nuestros Servicios</h2> -->
           </div>
           <h2 class="Exlore-Our-Service">
-            <span>Explora Nuestros</span> Mejores Servicios
+            <span> Conoce Nuestros Servicios</span>
           </h2>
-          <h3>Fibra y Wireless</h3>
+          <h3>
+            En WindNet creamos planes que se adapten siempre a tus necesidades.
+          </h3>
 
           <div class="planes">
             <div class="residencial-card">
               <div>
+                <h2>Residencial</h2>
                 <img src="./assets/Telework-amico 1.svg" alt="" />
                 <div class="card-text">
-                  <h2>residencial</h2>
                   <p>
                     Comparte lo que quieras en Redes Sociales, mira tus videos,
                     series y películas favoritas, juega en línea, trabaja desde
@@ -101,9 +150,9 @@
 
             <div class="comercial-card">
               <div>
+                <h2>Comercial</h2>
                 <img src="./assets/Remote team-pana 1.svg" alt="" />
                 <div class="card-text">
-                  <h2>comercial</h2>
                   <p>
                     Garantizamos el mejor tiempo de respuesta, servicio VIP
                     disponible 24/7 para ti, servicio simétrico y potente para
@@ -118,9 +167,9 @@
         <div class="wave2">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
-              fill="#ffffff"
+              fill="#FFF8E5"
               fill-opacity="1"
-              d="M0,256L48,245.3C96,235,192,213,288,213.3C384,213,480,235,576,224C672,213,768,171,864,176C960,181,1056,235,1152,250.7C1248,267,1344,245,1392,234.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+              d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,154.7C1120,171,1280,149,1360,138.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
             ></path>
           </svg>
         </div>
