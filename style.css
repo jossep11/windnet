@@ -121,9 +121,6 @@ span {
   font-weight: 800;
 }
 
-.services-text {
-  font-weight: 500;
-}
 .line {
   height: 35px;
   width: 4px;
@@ -196,9 +193,6 @@ span {
   box-shadow: 5px 10px 18px #888888;
 }
 
-.Item-Descubre-Mas {
-  padding: 1.8rem;
-}
 .Item-Descubre-Mas button {
   margin: 0.8rem 0 0 0;
 }
@@ -409,14 +403,10 @@ img {
 
 section {
   position: relative;
+  margin-top: -4rem;
   overflow: hidden;
 }
 
-.section-img-splash {
-  /* position: absolute; */
-}
-.smash1 {
-}
 .friends-connected {
   position: absolute;
   z-index: 1;
@@ -443,16 +433,13 @@ section {
   gap: 0.4rem;
   margin-bottom: 0.5rem;
 }
+
+.about-us h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
 .about-us-width {
   width: 80%;
-}
-.Wind-Us {
-  font-size: 28px;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-.Wind-Us span {
-  font-weight: 800;
 }
 
 .check-us {
@@ -469,6 +456,7 @@ section {
 }
 
 .strengths {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -479,21 +467,11 @@ section {
 .strengths div {
   margin-bottom: 1rem;
 }
-@media screen and (max-width: 410px) {
+
+@media screen and (max-width: 768px) {
   .strengths {
     flex-direction: column;
     gap: 1rem;
-  }
-}
-@media screen and (max-width: 916px) {
-  .Wind-Us {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .Wind-Us {
-    width: 80%;
   }
 }
 
@@ -549,11 +527,40 @@ clip-path: ellipse(60% 100% at 50% 100%);
   align-items: center;
   width: 80%;
   height: 100%;
-  background: #ffb300;
-  border: 1px solid #000000;
-  border-radius: 8px;
+  padding: 1.5rem;
+  /* background: #ffb300; */
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 4px 5px 1px rgba(193, 193, 193, 0.7);
+  border-radius: 4px;
   text-align: center;
+  transition: all ease 0.3s;
 }
+.box-prices:hover {
+  background-color: #dbdbdb;
+  transform: scale(1.05);
+}
+
+.btn-started {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 52px;
+  font-weight: 600;
+  background: #fff;
+  border: solid 2px #dbdbdb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.Item-Descubre-Mas button {
+  padding: 0.5rem 2rem;
+}
+
 @media screen and (min-width: 768px) {
   .box-prices {
     width: 430px;
@@ -563,7 +570,7 @@ clip-path: ellipse(60% 100% at 50% 100%);
 .fa-wifi {
   margin: 1.4rem;
   font-size: 3.4rem;
-  color: #ffffff;
+  color: #000000;
 }
 
 .card-box-prices {
@@ -614,19 +621,7 @@ clip-path: ellipse(60% 100% at 50% 100%);
 .fa-circle-check {
   font-size: 1rem;
   margin-right: 0.2rem;
-  color: #ffffff;
-}
-
-.btn-started {
-  border: none;
-  outline: none;
-  font-size: 1.2rem;
-  width: 157px;
-  height: 39px;
-  font-weight: 600;
-  background: #ffdf7b;
-  border-radius: 20px;
-  cursor: pointer;
+  color: #000000;
 }
 
 .card-prices-btn {
