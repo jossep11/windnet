@@ -88,6 +88,10 @@ nav {
   display: flex;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 .textCenter {
   display: flex;
   align-items: center;
@@ -321,6 +325,11 @@ input[id="carrucel-3"]:checked ~ .carrucel .btn-carrusel[for="carrucel-3"] {
 }
 
 @media screen and (max-width: 768px) {
+  .Item-Descubre-Mas {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
   .container-portada {
     flex-direction: column;
   }
@@ -593,6 +602,7 @@ a {
     justify-content: flex-start;
   }
 }
+
 .planes-prices {
   margin-top: 2rem;
   justify-content: center;
@@ -601,8 +611,15 @@ a {
 
 .container-boxes-prices {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
   margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .container-boxes-prices {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
 
 .horizontal-Line {
@@ -630,4 +647,80 @@ a {
 .card-prices-btn {
   display: flex;
   justify-content: center;
+}
+
+footer {
+  overflow: hidden;
+}
+
+footer {
+  margin-top: 2rem;
+}
+footer a {
+  color: #ffffff;
+}
+.footer-cotainer {
+  /* margin-top: 8rem; */
+  height: 900px;
+  background-size: cover;
+  background-image: url("./assets/Vector\ footersvg.svg");
+  background-repeat: no-repeat;
+  gap: 5rem;
+  color: #fff;
+}
+
+.footer__section {
+  padding-top: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer__section {
+  display: flex;
+}
+
+.footer__section1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__section2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-media__footer {
+  padding-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Info-Company__footer {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Products-Company__footer {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Soporte-Company__footer {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and(max-width: 920px) {
+  .footer__section1 {
+    background-color: green;
+    padding-top: 20rem;
+  }
 }
