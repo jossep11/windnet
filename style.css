@@ -501,10 +501,13 @@ section {
 clip-path: ellipse(60% 100% at 50% 100%);
 } */
 
+/* pricing section */
+
 .section-pricing {
   /* change it */
   margin-top: 5rem;
 }
+
 .pricing {
   display: flex;
   justify-content: center;
