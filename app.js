@@ -21,7 +21,7 @@ function handleSubmit(event) {
   console.log(form.get("name"));
   buttonEmail.setAttribute(
     "href",
-    `mailto:jossepparedes@gmail.com?subject=${form.get("name")} ${form.get(
+    `mailto:info@wfiber.net?subject=${form.get("name")} ${form.get(
       "last-name"
     )}, ${form.get("email")} &body=Número de telefono:${form.get(
       "phone-number"
