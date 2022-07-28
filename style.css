@@ -9,6 +9,7 @@
   list-style: none;
   /* border: solid red; */
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -70,7 +71,7 @@ nav {
 
 .nav-menu li a.active,
 .nav-menu li a:hover {
-  color: rgb(248, 8, 8);
+  color: #595959;
 }
 #check {
   display: none;
@@ -158,7 +159,7 @@ span {
   }
   .nav-menu li a {
     color: #000000;
-    transition: all 2s;
+    transition: all 0.3s;
   }
   .container-portada {
     margin: 0 auto;
@@ -234,10 +235,21 @@ span {
   height: 60vh;
 }
 .Server-Img img {
-  height: 60vh;
+  height: 50vh;
+  width: auto;
 }
 .carrucel {
   margin-top: -2rem;
+}
+
+.galaxy {
+  background-image: url("./assets/vector-galaxia.svg");
+  position: absolute;
+  width: 450px;
+  height: 300px;
+  background-repeat: no-repeat;
+  top: 35%;
+  z-index: -1;
 }
 
 /* Main section */
@@ -278,6 +290,13 @@ main {
   width: 100%;
   overflow: hidden;
 }
+
+@media screen and (max-width: 1200px) {
+  .container-slide-all {
+    max-width: 90%;
+  }
+}
+
 .slide {
   margin: 0 auto;
   display: flex;
@@ -325,6 +344,14 @@ input[id="carrucel-3"]:checked ~ .carrucel .btn-carrusel[for="carrucel-3"] {
 }
 
 @media screen and (max-width: 768px) {
+  .galaxy {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    top: 85%;
+    z-index: -1;
+  }
   .Item-Descubre-Mas {
     display: flex;
     justify-content: center;
@@ -660,8 +687,7 @@ footer a {
   color: #ffffff;
 }
 .footer-cotainer {
-  /* margin-top: 8rem; */
-  height: 900px;
+  height: 100%;
   background-size: cover;
   background-image: url("./assets/Vector\ footersvg.svg");
   background-repeat: no-repeat;
@@ -670,12 +696,14 @@ footer a {
 }
 
 .footer__section {
-  padding-top: 20rem;
+  padding-top: 14rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
+  gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 .footer__section {
@@ -685,42 +713,160 @@ footer a {
 .footer__section1 {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .footer__section2 {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .social-media__footer {
+  width: 250px;
   padding-right: 5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+}
+.social-media__footer a {
+  margin-right: 1.1rem;
 }
 
 .Info-Company__footer {
-  width: 200px;
+  width: 250px;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .Products-Company__footer {
-  width: 200px;
+  width: 250px;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .Soporte-Company__footer {
-  width: 200px;
+  width: 250px;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
-@media screen and(max-width: 920px) {
-  .footer__section1 {
-    background-color: green;
-    padding-top: 20rem;
+@media screen and (max-width: 925px) {
+  .footer__section {
+    gap: 3rem;
   }
+}
+
+@media screen and (max-width: 590px) {
+  .footer__section {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.fa-linkedin-in {
+  font-size: 1.4rem;
+}
+.fa-facebook-f {
+  font-size: 1.4rem;
+  color: #4267b2;
+}
+.fa-twitter {
+  font-size: 1.4rem;
+  color: #06bbeb;
+}
+.fa-youtube {
+  font-size: 1.4rem;
+  color: #d52a1e;
+}
+
+.Contact-Img img {
+  height: 35vh;
+}
+
+.container-portada__contact {
+  align-items: center;
+}
+
+.container-contact {
+  max-width: 560px;
+}
+
+.form-contact {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contact {
+  padding-top: 10rem;
+}
+
+.contact__form {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  height: 41px;
+  padding: 12px;
+  outline: none;
+}
+.textAlign-center {
+  text-align: center;
+}
+.container-btn-contact button {
+  width: 150px;
+}
+.form-contact__names {
+  display: flex;
+  gap: 3%;
+}
+.form-col6 {
+  width: 280px;
+}
+.form-col12 {
+  width: 100%;
+}
+
+.form-inputs div {
+  display: flex;
+  margin-bottom: 30px;
+}
+.office-hours div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+.office-hours .fa-solid {
+  font-size: 40px;
+  color: #ffb300;
+}
+@media screen and (max-width: 768px) {
+  .form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .form-col6 {
+    width: 100%;
+  }
+  .form-col12 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-contact {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+#button-email_opacity {
+  display: none;
+}
+.container-contact h1 {
+  padding-bottom: 2rem;
 }

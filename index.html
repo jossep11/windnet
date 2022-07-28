@@ -12,6 +12,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Wind.Net</title>
   </head>
   <body>
@@ -26,29 +28,48 @@
           ></label>
         </div>
         <nav>
-          <a href="">
+          <a href="/" data-aos="zoom-in">
             <img class="Logo-img" src="./assets/logo2 SVG.svg" alt="Wind.Net" />
           </a>
           <input type="checkbox" id="check" />
 
           <ul class="nav-menu">
-            <li><a class="" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="" href="/">Inicio</a></li>
+            <li><a href="/#main-services">Servicios</a></li>
+            <li><a href="/#about-us__Section">Nosotros</a></li>
+            <li><a href="/#planes_pricing">Planes</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
           </ul>
         </nav>
+        <div class="galaxy" data-aos="zoom-out"></div>
 
         <div class="container-slide-all">
-          <input checked type="radio" name="carrucel" id="carrucel-1" hidden />
-          <input type="radio" name="carrucel" id="carrucel-2" hidden />
-          <input type="radio" name="carrucel" id="carrucel-3" hidden />
-
+          <input
+            class="input-carrucel"
+            checked
+            type="radio"
+            name="carrucel"
+            id="carrucel-1"
+            hidden
+          />
+          <input
+            class="input-carrucel"
+            type="radio"
+            name="carrucel"
+            id="carrucel-2"
+            hidden
+          />
+          <input
+            class="input-carrucel"
+            type="radio"
+            name="carrucel"
+            id="carrucel-3"
+            hidden
+          />
           <div class="slide">
             <div class="container-portada">
               <div class="Server-Img">
-                <img src="./assets/Server-bro 1.svg" alt="" />
+                <img src="./assets/Server-bro 1.svg" alt="servidores img" />
               </div>
               <div class="item-slide carrusel-info">
                 <h1 class="textCenter">
@@ -73,7 +94,10 @@
 
             <div class="container-portada">
               <div class="Server-Img">
-                <img src="./assets/Pricing plans-amico 1.svg" alt="" />
+                <img
+                  src="./assets/Pricing plans-amico 1.svg"
+                  alt="pricing plans"
+                />
               </div>
               <div class="item-slide carrusel-info">
                 <h1 class="textCenter">Impulsa tu Comercio!</h1>
@@ -96,7 +120,10 @@
 
             <div class="container-portada">
               <div class="Server-Img">
-                <img src="./assets/Telecommuting-amico 1.svg" alt="" />
+                <img
+                  src="./assets/Telecommuting-amico 1.svg"
+                  alt="Telecommuting-amigos"
+                />
               </div>
               <div class="item-slide carrusel-info">
                 <h1 class="textCenter">
@@ -138,12 +165,12 @@
           </svg>
         </div>
 
-        <div class="main-container">
+        <div id="main-services" class="main-container">
           <div class="our-services">
             <!-- <div class="line"></div> -->
             <!-- <h2 class="services-text yellow-text">Nuestros Servicios</h2> -->
           </div>
-          <h2 class="Exlore-Our-Service">
+          <h2 class="Exlore-Our-Service" data-aos="fade-right">
             <span> Conoce Nuestros Servicios</span>
           </h2>
           <h3>
@@ -152,9 +179,9 @@
 
           <div class="planes">
             <div class="residencial-card">
-              <div>
+              <div data-aos="fade-right">
                 <h2>Residencial</h2>
-                <img src="./assets/Remote team-pana 1.svg" alt="" />
+                <img src="./assets/Remote team-pana 1.svg" alt="team remote" />
 
                 <div class="card-text">
                   <p>
@@ -167,9 +194,9 @@
             </div>
 
             <div class="comercial-card">
-              <div>
+              <div data-aos="fade-left">
                 <h2>Negocios</h2>
-                <img src="./assets/Telework-amico 1.svg" alt="" />
+                <img src="./assets/Telework-amico 1.svg" alt="Telework team" />
                 <div class="card-text">
                   <p>
                     Garantizamos el mejor tiempo de respuesta, servicio VIP
@@ -193,16 +220,16 @@
         </div>
       </main>
 
-      <section>
-        <div class="section-img-splash">
+      <section id="about-us__Section">
+        <div class="section-img-splash" data-aos="fade-up">
           <img class="smash1" src="./assets/Vector 35.svg" alt="" />
           <img
             class="friends-connected"
             src="./assets/Connected-pana 1.svg"
-            alt=""
+            alt="splash friends"
           />
         </div>
-        <div class="about-us">
+        <div class="about-us" data-aos="fade-left">
           <div class="about-usLine">
             <div class="line"></div>
             <h1>Acerca de Nosotros...</h1>
@@ -250,7 +277,7 @@
       </section>
       <!-- <div class="testwave"></div> -->
 
-      <section class="section-pricing">
+      <section id="planes_pricing" class="section-pricing" data-aos="zoom-in">
         <div class="d-flex pricing">
           <div class="line"></div>
           <h2 class="services-text">Planes de Internet</h2>
@@ -367,40 +394,52 @@
           <div class="footer__section">
             <div class="footer__section1">
               <div class="social-media__footer">
-                <h2>Siguenos en</h2>
+                <h2>Siguenos en:</h2>
                 <div>
-                  <i class="fa-brands fa-linkedin-in"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-youtube"></i>
-                  <i class="fa-brands fa-facebook-f"></i>
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
                 </div>
               </div>
 
               <div class="Info-Company__footer">
                 <h2>WindNet</h2>
-                <a href="">Acerca de Nosotros</a>
-                <a href="">Team</a>
-                <a href="">Contacto</a>
+                <a href="#about-us__Section">Acerca de Nosotros</a>
+                <a href="#">Team</a>
+                <a href="#">Contacto</a>
               </div>
             </div>
 
             <div class="footer__section2">
               <div class="Products-Company__footer">
                 <h2>Productos</h2>
-                <a href="">Planes</a>
-                <a href="">Servicios</a>
+                <a href="#planes_pricing">Planes</a>
+                <a href="#main-services">Servicios</a>
               </div>
 
               <div class="Soporte-Company__footer">
                 <h2>Soporte</h2>
-                <a href="">Politicas de privacidad</a>
-                <a href="">FAQ</a>
+                <a href="#">Politicas de privacidad</a>
+                <a href="#">FAQ</a>
               </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
