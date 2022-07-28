@@ -827,6 +827,13 @@ footer a {
   width: 100%;
 }
 
+@media screen and (max-width: 500px) {
+  .form-inputs {
+    width: 90%;
+  }
+}
+.form-inputs {
+}
 .form-inputs div {
   display: flex;
   margin-bottom: 30px;
