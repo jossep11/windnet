@@ -33,20 +33,3 @@ function handleSubmit(event) {
 function closeNav() {
   document.querySelector("#check").checked = false;
 }
-console.log(document.querySelector(".btn-inicio"));
-// document.querySelector('.btn-inicio').onclick = function() {
-//   console.log('test');
-// }​;​
-
-// document.querySelector('.Btn-Servicios').onclick = function() {
-//   console.log('test')
-// }​;​
-// document.querySelector('.Btn-Nosotros').onclick = function() {
-//   console.log('test')
-// }​;​
-// document.querySelector('.Btn-Precios').onclick = function() {
-//   console.log('test')
-// }​;​
-// document.querySelector('.Btn-Contacto').onclick = function() {
-//   console.log('test')
-// };
