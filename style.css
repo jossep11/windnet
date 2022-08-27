@@ -478,6 +478,11 @@ section {
   width: 80%;
 }
 
+.services-text {
+  font-size: 30px;
+  font-weight: 800;
+}
+
 .check-us {
   display: flex;
   align-items: center;
@@ -727,6 +732,9 @@ footer a {
   padding-right: 5rem;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+}
+.social-media__footer div {
 }
 .social-media__footer a {
   margin-right: 1.1rem;
@@ -766,20 +774,13 @@ footer a {
   }
 }
 
-.fa-linkedin-in {
+.fa-facebook {
   font-size: 1.4rem;
+  /* color: #478ce0; */
 }
-.fa-facebook-f {
+.fa-instagram {
   font-size: 1.4rem;
-  color: #4267b2;
-}
-.fa-twitter {
-  font-size: 1.4rem;
-  color: #06bbeb;
-}
-.fa-youtube {
-  font-size: 1.4rem;
-  color: #d52a1e;
+  /* color: #06bbeb; */
 }
 
 .Contact-Img img {
