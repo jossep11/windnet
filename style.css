@@ -907,7 +907,7 @@ footer a {
 }
 .img-rounded2 {
   position: relative;
-  left: -60%;
+  left: -55%;
   bottom: 15%;
   width: 350px;
 }
@@ -919,9 +919,29 @@ footer a {
   width: 350px;
 }
 
+.img-rounded4 {
+  position: relative;
+  right: 40%;
+  width: 350px;
+}
+
+.img-rounded5 {
+  position: relative;
+  bottom: 60%;
+  right: 160%;
+  width: 450px;
+}
+
+.img-rounded6 {
+  position: relative;
+  bottom: 80%;
+  right: 60%;
+  width: 550px;
+}
+
 .photo {
-  width: 150px;
-  height: 150px;
+  width: 10rem;
+  height: 10rem;
   /* border: 5px solid black; */
   margin-top: 0.4rem;
   border-radius: 50%;
@@ -940,9 +960,69 @@ footer a {
 .about-us-width p:nth-child(3) {
   padding-top: 1rem;
 }
+.first-group-carousel {
+  position: relative;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
 
 .box-img {
   position: relative;
-  justify-content: space-evenly;
+  width: 200%;
+  flex-flow: nowrap;
+  transition: all 0.5s ease;
+  /* transform: translateX(-50%); */
+  /* overflow: hidden; */
+}
+._1 {
+  width: 100%;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+._2 {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fa-circle-chevron-left {
+  position: absolute;
+  top: 50%;
+}
+
+.fa-circle-chevron-right {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+}
+
+input[id="carrucel-users-1"]:checked ~ .box-img {
+  /* animation: none; */
+  transform: translateX(0);
+}
+
+input[id="carrucel-users-2"]:checked ~ .box-img {
+  /* animation: none; */
+  transform: translateX(-50%);
+}
+
+.btn-carrusel-2 {
+  height: 10rem;
+  width: 10rem;
+  /* padding: 10px; */
+  border-radius: 50%;
+  background: linear-gradient(0deg, #d9d9d9, #d9d9d9), #d9d9d9;
+  /* margin: 2rem 0.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all ease 0.5s; */
+  z-index: 1;
+}
+
+.btn-carrusel-2:hover {
+  background: #f58303;
 }
