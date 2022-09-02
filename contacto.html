@@ -55,10 +55,9 @@
             </div>
             <div class="container-contact">
               <h1 class="textCenter">Contáctanos</h1>
-              <p>Bienvenido! Puedes visitarnos en nuestra sede principal, llamarnos, escribirnos por nuestras redes sociales o también enviarnos un email</p>
+              <p>Bienvenido! Puedes visitarnos en nuestra oficina principal, en Aresivo, llamarnos, escribirnos por nuestras redes sociales o también enviarnos un email.</p>
               <p class="yellow-text textAlign-center">**¡Te responderemos de forma inmediata!**</p>
-
-              <p>En Wind Net contamos con un excelente equipo profesional dispuesto a ayudarte!</p>
+              <p>En Wind Net contamos con un excelente equipo profesional dispuesto a ayudarte en todo momento!</p>
             </div>
           </div>
         </div>
@@ -70,18 +69,21 @@
           <form id="form" class="form-contact">
             <div class="form-inputs">
               <div class="form-contact__names">
-                <input class="contact__form form-col6" type="text" placeholder="Nombre" name="usuario" />
-                <input class="contact__form form-col6" type="text" placeholder="Apellido" name="last-name" />
+                <input class="contact__form form-col6" type="text" placeholder="Nombre" id="usuario" name="usuario" required />
+                <input class="contact__form form-col6" type="text" placeholder="Apellido" id="last-name" name="last-name" required />
               </div>
               <div>
-                <input class="contact__form form-col12" type="email" id="email" name="email" placeholder="Correo electronico" />
-              </div>
-
-              <div>
-                <input class="contact__form form-col16" type="text" placeholder="Telefono" id="phone-number" name="phone-number" />
+                <input class="contact__form form-col12" type="email" id="email" name="email" placeholder="Correo electronico" required />
               </div>
               <div>
-                <input class="contact__form form-col12" type="text" placeholder="Mensaje" id="message" name="message" />
+                <input class="contact__form form-col12" type="text" id="asunto" name="asunto" placeholder="Asunto" required />
+              </div>
+              <div>
+                <input class="contact__form form-col16" type="text" placeholder="Telefono" id="phone-number" name="phone-number" required />
+              </div>
+              <div>
+                <textarea class="contact__form form-col12" placeholder="Mensaje" id="message" name="message" required></textarea>
+                <!-- <input class="contact__form form-col12" type="text" placeholder="Mensaje" id="message" name="message" /> -->
               </div>
               <div class="container-btn-contact">
                 <button type="submit" class="btn btn-primary">Enviar</button>
@@ -92,14 +94,11 @@
               <h3>Horario de trabajo</h3>
               <div>
                 <img src="./assets/work 1.svg" alt="work" />
-                <p>
-                  Lunes a Viernes de <br />
-                  8:00 am - 5:00 pm
-                </p>
+                <p>Oficina: Lunes a Viernes de 9:00 am - 5:00 pm</p>
               </div>
               <div>
                 <i class="fa-solid fa-phone-volume"></i>
-                <p>787 878 6422</p>
+                <p>Call center: 787 878 6422 de 8:00 am - 5:00 pm</p>
               </div>
               <div>
                 <i class="fa-solid fa-envelope"></i>
@@ -161,6 +160,7 @@
         </div>
       </footer>
     </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -841,7 +841,7 @@ footer a {
 }
 .office-hours div {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 2rem;
   padding-bottom: 1rem;
 }
@@ -1013,4 +1013,14 @@ input[id="carrucel-users-1"]:checked ~ .carrucel-box-users-2 .btn-carrusel[for="
 
 input[id="carrucel-users-2"]:checked ~ .carrucel-box-users-2 .btn-carrusel[for="carrucel-users-2"] {
   background: #f58303;
+}
+
+.office-hours div {
+  max-width: 18rem;
+  text-align: start;
+}
+.form-contact div:nth-child(5) .contact__form {
+  resize: none;
+  height: 120px;
+  max-height: 120px;
 }
