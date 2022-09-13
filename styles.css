@@ -412,12 +412,12 @@ img {
   /* box-shadow: 5px 10px 18px #888888; */
   transition: all ease 0.5s;
 }
-input[id="plan-residencial"]:checked ~ .btn-plans[for="plan-residencial"] {
+input[id="plan-residencial"]:checked ~ .planes_tipo-switch .btn-plans[for="plan-residencial"] {
   background: #ffb300;
   box-shadow: 5px 10px 18px #888888;
 }
 
-input[id="plan-comercial"]:checked ~ .btn-plans[for="plan-comercial"] {
+input[id="plan-comercial"]:checked ~ .planes_tipo-switch .btn-plans[for="plan-comercial"] {
   background: #ffb300;
   box-shadow: 5px 10px 18px #888888;
 }
@@ -684,33 +684,34 @@ a {
 }
 .container-prices0 {
   position: relative;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   padding-top: 2rem;
   overflow: hidden;
 }
 
 .pricing-bar {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 5rem;
-  /* flex-flow: nowrap; */
+  justify-content: space-around;
+  width: 200%;
   transition: all 0.5s ease;
 }
 
 .prices-1 {
   display: flex;
-  width: 100%;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-evenly; */
 }
 
 .prices-2 {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
+
+input[id="plan-comercial"]:checked ~ .pricing-bar {
+  transform: translateX(-50%);
+}
+input[id="plan-residencial"]:checked ~ .pricing-bar {
+  transform: translateX(0);
+}
+
 .horizontal-Line {
   margin: 1rem 0;
   width: 160px;
