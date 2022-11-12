@@ -706,6 +706,13 @@ a {
   flex-direction: column;
   /* justify-content: start; */
 }
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+.pricing-bar::-webkit-scrollbar {
+  display: none;
+}
 
 .box-prices-2 {
   position: relative;
