@@ -698,6 +698,12 @@ a {
   transition: all 0.5s ease;
   overflow: auto;
 }
+
+/* .pricing-bar.active { */
+/* background-color: green; */
+/* transform: scale(1.05); */
+/* } */
+
 .box-prices-1 {
   width: 100%;
   height: 100%;
